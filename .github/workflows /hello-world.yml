@@ -1,14 +1,11 @@
 name: Hello World
 
-on: push
+'on': push
 
 jobs:
   hello-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: List and Read file
+      - name: Echo text
         run: |
           echo "Hello, world!"
